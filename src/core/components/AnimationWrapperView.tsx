@@ -14,7 +14,7 @@ import { BaseAnimationWrapper } from './wrapper/BaseAnimationWrapper';
 import { JsonAnimationWrapper } from './wrapper/JsonAnimationWrapper';
 import { AnimationType } from '../data/Enums';
 
-export default class AnimationWrapperView extends React.Component<AnimationWrapperProps> {
+export default class AnimationWrapperView extends React.Component<React.PropsWithChildren<AnimationWrapperProps>> {
 
     private _animationComponentClass: WrapperComponent | undefined;
     private _animationComponentRef?: BaseAnimationWrapper<AnimationWrapperProps> | null;
